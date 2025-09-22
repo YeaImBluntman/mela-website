@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MELA - Miracle English Learning Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg py-4 px-6 fixed top-0 w-full z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-gray-800 tracking-wide">MELA</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="#classes" class="text-gray-600 hover:text-blue-600 transition duration-300">Classes</a>
+                <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition duration-300">Pricing</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="#about" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 transition duration-300 rounded-md">About Us</a>
+            <a href="#classes" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 transition duration-300 rounded-md">Classes</a>
+            <a href="#pricing" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 transition duration-300 rounded-md">Pricing</a>
+            <a href="#contact" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 transition duration-300 rounded-md">Contact</a>
+        </div>
+    </nav>
+    <div class="pt-20"></div>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white py-20 px-6 text-center shadow-lg rounded-b-3xl mx-4 md:mx-0">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Master English with MELA</h1>
+            <p class="text-xl md:text-2xl font-light mb-8">Miracle English Learning Academy</p>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Learn from expert teachers and connect with other students to make learning English an enjoyable and affordable experience.</p>
+            <a href="#contact" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+                Join a Class Today
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- About Us Section -->
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Our Philosophy</h2>
+            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed mb-4">
+                        At MELA, we believe that learning English is a journey, not just a destination. Our goal is to create a legitimate and supportive environment where students feel empowered to express their ideas and opinions. We focus on real-world communication skills, building confidence, and making the learning process interactive and fun.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        We offer a variety of courses tailored to different levels, and our flexible group pricing model allows you to learn with friends or classmates, making quality education more accessible and affordable for everyone.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/81a9e3/ffffff?text=MELA+Community" alt="A group of students smiling and learning together." class="rounded-xl shadow-lg w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Classes Section -->
+        <section id="classes" class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Our Course Offerings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">Starters, Movers, Flyers</h3>
+                    <p class="text-gray-600">The Cambridge English: Young Learners tests are a great way for children to get started with learning English and build confidence.</p>
+                </div>
+                <!-- Course Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">KET (A2 Key) & PET (B1 Preliminary)</h3>
+                    <p class="text-gray-600">Certify your foundational English skills with our focused preparation for these globally recognized exams.</p>
+                </div>
+                <!-- Course Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">IELTS Preparation</h3>
+                    <p class="text-gray-600">Our comprehensive course prepares you for all four modules of the IELTS exam: Reading, Writing, Listening, and Speaking.</p>
+                </div>
+                <!-- Course Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">V-Step</h3>
+                    <p class="text-gray-600">Specifically designed for the Vietnamese Standardized Test of English Proficiency to help you achieve your desired score.</p>
+                </div>
+                <!-- Course Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">Conversation & Speaking</h3>
+                    <p class="text-gray-600">Build fluency and confidence in a wide range of everyday and academic conversations.</p>
+                </div>
+                <!-- Course Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">General English</h3>
+                    <p class="text-gray-600">Improve all four core skills - listening, reading, writing, and speaking - for daily and professional use.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Flexible Pricing to Suit You</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 1-on-1 Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-transparent hover:border-blue-500 transition-colors duration-300 transform hover:scale-105">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">1-on-1 Class</h3>
+                        <p class="text-5xl font-extrabold text-blue-600 mb-2">$15</p>
+                        <p class="text-gray-500 mb-6">per student / per hour</p>
+                        <ul class="text-left text-gray-600 space-y-2 mb-8">
+                            <li>✓ Personalized lesson plans</li>
+                            <li>✓ Full focus from the teacher</li>
+                            <li>✓ Flexible scheduling</li>
+                        </ul>
+                        <a href="#contact" class="bg-blue-500 text-white font-bold py-3 px-8 rounded-full shadow hover:bg-blue-600 transition-colors duration-300">
+                            Start 1-on-1
+                        </a>
+                    </div>
+                </div>
+                <!-- 1-on-3 Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-transparent hover:border-blue-500 transition-colors duration-300 transform hover:scale-105 relative">
+                    <div class="absolute top-0 right-0 -mt-4 mr-4 bg-yellow-400 text-yellow-800 text-sm font-bold px-3 py-1 rounded-full shadow-md rotate-6">Popular</div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">1-on-3 Class</h3>
+                        <p class="text-5xl font-extrabold text-blue-600 mb-2">$10</p>
+                        <p class="text-gray-500 mb-6">per student / per hour</p>
+                        <ul class="text-left text-gray-600 space-y-2 mb-8">
+                            <li>✓ Small group dynamic</li>
+                            <li>✓ Interactive learning</li>
+                            <li>✓ Great value</li>
+                        </ul>
+                        <a href="#contact" class="bg-blue-500 text-white font-bold py-3 px-8 rounded-full shadow hover:bg-blue-600 transition-colors duration-300">
+                            Join a Group
+                        </a>
+                    </div>
+                </div>
+                <!-- 1-on-5 Plan -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-transparent hover:border-blue-500 transition-colors duration-300 transform hover:scale-105">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-800">1-on-5 Class</h3>
+                        <p class="text-5xl font-extrabold text-blue-600 mb-2">$5</p>
+                        <p class="text-gray-500 mb-6">per student / per hour</p>
+                        <ul class="text-left text-gray-600 space-y-2 mb-8">
+                            <li>✓ The most affordable option</li>
+                            <li>✓ Broad peer interaction</li>
+                            <li>✓ Perfect for friends</li>
+                        </ul>
+                        <a href="#contact" class="bg-blue-500 text-white font-bold py-3 px-8 rounded-full shadow hover:bg-blue-600 transition-colors duration-300">
+                            Form a Group
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-600 max-w-2xl mx-auto">
+                <p>Did you know? If you and your friends can find other students of the same level, you can split the cost and make your learning fee significantly cheaper per person!</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">What Our Students Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-500">
+                    <p class="italic text-gray-700 mb-4">"MELA made learning English fun and interactive. My speaking confidence has improved so much since I joined the group classes. The teachers are fantastic!"</p>
+                    <p class="font-bold text-blue-700">- An L., IELTS Student</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-500">
+                    <p class="italic text-gray-700 mb-4">"The 1-on-1 sessions helped me focus on my specific weaknesses. I was able to pass my V-Step exam on the first try. Highly recommend!"</p>
+                    <p class="font-bold text-blue-700">- Minh V., V-Step Student</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Registration Section -->
+        <section id="contact" class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Ready to Learn?</h2>
+            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl max-w-3xl mx-auto">
+                <p class="text-center text-lg mb-6 text-gray-600">Fill out the form below to register for a class or get in touch with us. We'll find the perfect course and group for you!</p>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label for="level" class="block text-sm font-medium text-gray-700">Current English Level / Course of Interest</label>
+                        <input type="text" id="level" name="level" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300" placeholder="e.g., Starters, IELTS, or 'Beginner'">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Your Message / Class Preference</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300" placeholder="Please specify if you are interested in a 1-on-1, 1-on-3, or 1-on-5 class."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-300">
+                            Submit Inquiry
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 text-center rounded-t-3xl mx-4 md:mx-0">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2024 Miracle English Learning Academy (MELA). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
