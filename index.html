@@ -20,7 +20,6 @@
     <nav class="bg-white shadow-lg py-4 px-6 fixed top-0 w-full z-50">
         <div class="container mx-auto flex items-center justify-between">
             <a href="#" class="flex items-center space-x-2">
-                <!-- Corrected the file name to match the uploaded image -->
                 <img src="MELA Logo.jpg" alt="MELA Logo" class="h-16 w-auto">
             </a>
             <div class="hidden md:flex space-x-6">
@@ -47,7 +46,6 @@
     <!-- Hero Section -->
     <header class="bg-blue-600 text-white py-20 px-6 text-center shadow-lg rounded-b-3xl mx-4 md:mx-0">
         <div class="container mx-auto">
-            <!-- Updated src path with .jpeg extension -->
             <img src="MELA Logo.jpg" alt="MELA Logo" class="h-24 w-auto mx-auto mb-4">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Master English with MELA</h1>
             <p class="text-xl md:text-2xl font-light mb-8">Miracle English Learning Academy</p>
@@ -180,6 +178,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-500">
                     <p class="italic text-gray-700 mb-4">"MELA made learning English fun and interactive. My speaking confidence has improved so much since I joined the group classes. The teachers are fantastic!"</p>
+                    <p class="font-bold text-blue-700">- An L., IELTS Student</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-500">
                     <p class="italic text-gray-700 mb-4">"The 1-on-1 sessions helped me focus on my specific weaknesses. I was able to pass my V-Step exam on the first try. Highly recommend!"</p>
@@ -193,7 +192,7 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-800">Ready to Learn?</h2>
             <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl max-w-3xl mx-auto">
                 <p class="text-center text-lg mb-6 text-gray-600">Fill out the form below to register for a class or get in touch with us. We'll find the perfect course and group for you!</p>
-                <form action="#" method="POST" class="space-y-6">
+                <form id="contact-form" class="space-y-6">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
                         <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-colors duration-300">
@@ -216,31 +215,65 @@
                         </button>
                     </div>
                 </form>
+                <div id="success-message" class="hidden mt-4 text-center text-green-600 font-medium">Your inquiry has been submitted! A new email window should open automatically.</div>
             </div>
         </section>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-6 text-center rounded-t-3xl mx-4 md:mx-0">
-        <div class="container mx-auto">
+    <footer class="bg-gray-800 text-white py-8 px-6 rounded-t-3xl mx-4 md:mx-0">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
             <p class="text-sm">&copy; 2024 Miracle English Learning Academy (MELA). All rights reserved.</p>
+            <div class="flex items-center space-x-4">
+                <p class="text-sm font-bold">Follow Us:</p>
+                <a href="https://www.facebook.com/share/17Npzqo6aJ/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-400 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 11.082l2.316-2.193a.5.5 0 00.125-.494l-.248-.838a.5.5 0 00-.735-.295l-3.238 1.838a.5.5 0 00-.285.586l.666 2.502a.5.5 0 00.735.32l3.435-1.944a.5.5 0 00.285-.586L14 11.082zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.328 15.018a.5.5 0 01-.735.295L12.02 15.474a.5.5 0 01-.285-.586l.666-2.502a.5.5 0 01.735-.32l3.435 1.944a.5.5 0 01-.285.586L14.47 14.524a.5.5 0 01-.125.494l-2.316 2.193z" fill-rule="evenodd" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.187 7.218a.5.5 0 00.735-.295l-1.334-4.22a.5.5 0 00-.735-.295l-1.334 4.22a.5.5 0 00.735.295l1.334-4.22a.5.5 0 00-.735-.295l-1.334 4.22a.5.5 0 00.735.295zM12 3.655l2.427-1.424a.5.5 0 01.735.295l-.666 2.502a.5.5 0 01-.735.32L12 4.192a.5.5 0 01-.735.295L11.265 4a.5.5 0 01.735-.295zM15.47 14.524a.5.5 0 01-.125.494l-2.316 2.193a.5.5 0 01-.735.295l-1.334-4.22a.5.5 0 01.735-.295l1.334 4.22a.5.5 0 01.735-.295zM15.47 14.524a.5.5 0 01-.125.494l-2.316 2.193a.5.5 0 01-.735.295l-1.334-4.22a.5.5 0 01.735-.295l1.334 4.22a.5.5 0 01.735-.295zM8.53 9.476a.5.5 0 01-.125-.494l2.316-2.193a.5.5 0 01.735-.295l1.334 4.22a.5.5 0 01-.735.295l-1.334-4.22a.5.5 0 01-.735.295zM8.53 9.476a.5.5 0 01-.125-.494l2.316-2.193a.5.5 0 01.735-.295l1.334 4.22a.5.5 0 01-.735.295l-1.334-4.22a.5.5 0 01-.735.295zM12 20.345l-2.427 1.424a.5.5 0 01-.735-.295l.666-2.502a.5.5 0 01.735-.32L12 19.808a.5.5 0 01.735-.295l.001.001zM12 20.345l-2.427 1.424a.5.5 0 01-.735-.295l.666-2.502a.5.5 0 01.735-.32L12 19.808a.5.5 0 01.735-.295l.001.001z" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </footer>
 
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
 
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu on link click
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const level = document.getElementById('level').value;
+            const message = document.getElementById('message').value;
+
+            // Define the recipient email and subject
+            const recipientEmail = 'melavnedu@gmail.com'; // **Updated with your email address**
+            const emailSubject = 'MELA Class Inquiry';
+
+            const emailBody = `Full Name: ${name}\nEmail: ${email}\nLevel/Course: ${level}\n\nMessage:\n${message}`;
+            
+            // Construct the mailto link
+            const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+            
+            window.location.href = mailtoLink;
+
+            // Display a confirmation message
+            successMessage.classList.remove('hidden');
         });
     </script>
 </body>
